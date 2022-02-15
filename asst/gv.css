@@ -1,12 +1,12 @@
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
+/*Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap */
 
-// Small devices (landscape phones, 576px and up)
+/*Small devices (landscape phones, 576px and up)*/
 @media (min-width:576px){.p-100{max-width:25%}} /* 540px */
 @media (min-width:768px){.p-100{max-width:50%}} /* 720px */
 @media (min-width:992px){.p-100{max-width:75%}}
 @media (min-width:1200px){.p-100{max-width:100%}}/* 1140px */
-/* this does work but needs fine tuning - yui's shot does get small but well. It kinda worked but still seems to over size on iOS device simulator!  */
+/* this does work but needs fine tuning  */
 
 /* portrait classes for  */
 .p-100 {/*width: 100%;*/
@@ -14,9 +14,34 @@
 display: block;margin: 3px auto;text-align: center;}
 /* .p-100 doesn't show up in bootstrap .css but d-block does but not really much of other than it's display block. this does work with a single portrait shot but doesn't seem to offer any respostinve classes. */
 /*.w-100{width:100%!important}.h-25{height:25%!important}.h-50{height:50%!important}.h-75{height:75%!important}*/
+/* there are issues with the sizes of photos and some will need some cropping because when the sider is going whatever underneath the slider is jumpy. maybe just crop landsapes to what the 2 up shots are... Ah another idea is to just go with a 4 up splash img w/o sider like the header for fb or ameba. There's also the idea of having a splash that shows both portrait/landscape shots although I did have the the tendancy to shoot more portrait vs lands. */
 
 .navbar-collapse {}
 
-.about {color: #000; padding: 15px 10px; /*text-align: center; margin: 0 50px;*/}
+/* drk theme */
+body {background-color: #000;}
+/*.bg-dark {background-color: #000;}*/
+.bg-dark a:hover {color:white;}
+navbar-light {background-color:#666!important; color:#B8B8B8!important;}
+/*.navbar-brand {color:#B8B8B8!important;}*/
+/*.navbar-collapse {color:#B8B8B8!important;}*/
+/*.nav-link {color:#B8B8B8!important;}*/
+/*.nav-link a:hover {color:white!important;}*/
+/*.dropdown-toggle {color:#B8B8B8!important;}*/
+.dropdown-menu {background-color:#343a40!important; color:#000;}
+.dropdown-item {background-color:#343a40!important; color:#999;} 
+.dropdown-menu a:hover {color:white;}
+.dropdown-divider {background-color:#343a40!important; color:#999; border-top: 1px solid #999;}
+
+/*.dropdown-toggle {background-color:#343a40!important; color:#999;} doesn't seem to do anything*/
+/* still working on this but there are some issues with the dropdown like I can't seem to get the hover */
+
+.carousel-caption {color: #FFF; text-shadow: 3px 3px 2px #666;}
+.carousel-caption li {list-style: none;}
+.d-none{display:block!important}
+/* bs is display:none which doesn't work with showing the small about splash */
+/*.d-md-block{display:block!important}*/
+
+.about {color: #FFF; padding: 14px 10px; /*text-align: center; margin: 0 50px;*/}
 /* this needs to be responsive for smaller views so need to find where the smaller views are and they are on this sorta child theme */
 .about li {list-style: none;}
